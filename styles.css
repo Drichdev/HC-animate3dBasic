@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: arial, sans-serif;
+}
+
+#all{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top : 10%;
+    left: 25%;
+
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 700px;
+    border: #000000 1px solid;
+}
+
+.image img{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+#mg1{
+    animation: rotation 6s linear infinite;
+}
+
+#mg2{
+    animation: rotation 7s linear infinite;
+}
+
+
+.calque
+{
+	width: 100px;
+	height: 100px;
+	padding: 35px;
+    background-color: #bac6d9;
+	display: inline-block;
+    border: #000000 2px solid;
+    border-radius: 10%;
+	margin:20px;
+	font-size:24px;
+	font-weight:bold;
+	animation: rotation 5s linear infinite;
+}
+@keyframes rotation
+{
+	0%
+	{
+		transform: perspective(100px) rotate3d(1,1,1,0deg);
+	}
+	50%
+	{
+		transform: perspective(300px) rotate3d(1,1,1,60deg);
+	}
+	100%
+	{
+		transform: perspective(300px) rotate3d(1,1,1,360deg);
+	}
+}
